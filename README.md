@@ -46,3 +46,9 @@ Connect the terminal to your GitHub account [using SSH keys](https://help.github
 - [ ] [Generate a new SSH key and add it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [ ] [Add the SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 - [ ] Check that it's working by running eg `git pull origin master` in one of the repos
+
+## Git config
+Update the content in the git config file to ensure that GitHub commits are being assigned to the right user.
+
+- [ ] Update the name - `git config --global user.name "<Full Name>"`
+- [ ] Update the email address - `git config --global user.email "<email_address>"`
