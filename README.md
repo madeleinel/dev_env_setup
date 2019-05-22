@@ -52,3 +52,9 @@ Update the content in the git config file to ensure that GitHub commits are bein
 
 - [ ] Update the name - `git config --global user.name "<Full Name>"`
 - [ ] Update the email address - `git config --global user.email "<email_address>"`
+
+# Heroku config
+Set Heroku CLI credentials to enable connecting to the Heroku account through the terminal.
+
+- [ ] `heroku login` > Press any key to open the browser > Return to the terminal > Should see message `Logged in as <email_address`
+- [ ] Run `cat ~/.netrc` to confirm that the login credentials have been added to that file
