@@ -6,7 +6,7 @@
 - [ ] Hush login message - `touch ~/.hushlogin`
 - [ ] [Install Homebrew](https://brew.sh/)
 - [ ] Install ZSH - `brew install zsh`
-- [ ] Change shell - `chsh -s /usr/local/bin/zsh`
+- [ ] Change shell - `chsh -s /usr/local/bin/zsh` OR `chsh -s /bin/zsh` - run 'atom /etc/shells' to check which path is included in the list of acceptable shells. If neither are included, add it to the bottom of that list.
 - [ ] Install Oh-my-zsh - `curl -L http://install.ohmyz.sh | sh`
 
 #### Add CLIs and short commands
@@ -36,7 +36,7 @@ $ rm -rf fonts
   - [ ] Set the home directory: General > Working directory > Change to `/Users/madeleinelinder/code`
 - [ ] Set up syntax highlighting
   - [ ] To install: `cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git`
-  - [ ] To enable: Add `source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh` to `~.zshrc` and then restart the terminal and run command `source ~/.zshrc`
+  - [ ] To enable: Add `source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh` to the end of `~.zshrc` and then restart the terminal and run command `source ~/.zshrc`
 
 ## Authentication
 Connect the terminal to your GitHub account [using SSH keys](https://help.github.com/en/articles/connecting-to-github-with-ssh).
