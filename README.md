@@ -1,6 +1,6 @@
 # Dev environment setup
 
-## Setup
+## Initial Setup
 - [ ] [Install Atom](https://atom.io/)
 - [ ] [Install iTerm2](https://www.iterm2.com/)
 - [ ] Hush login message - `touch ~/.hushlogin`
@@ -9,11 +9,11 @@
 - [ ] Change shell - `chsh -s /usr/local/bin/zsh` OR `chsh -s /bin/zsh` - run `atom /etc/shells` to check which path is included in the list of acceptable shells. If neither are included, add it to the bottom of that list.
 - [ ] Install Oh-my-zsh - `curl -L http://install.ohmyz.sh | sh`
 
-#### Add CLIs and short commands
+#### Add CLIs and Short Commands
 - [ ] Enable the command `atom <file_name>` in the terminal: In Atom, go to `Menu` and click `Install Shell Commands`
 - [ ] Add the Heroku CLI: `brew tap heroku/brew && brew install heroku` - [More info](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 
-## Customisation
+## Terminal Customisation
 - [ ] Configure the terminal setup in `~/.zshrc`
     - [ ] Set terminal theme (showing current branch etc) - `ZSH_THEME="agnoster"` - [More info](https://github.com/agnoster/agnoster-zsh-theme)
     - [ ] Set default user so it’s not displayed in the terminal window - `DEFAULT_USER="madeleinelinder"`
@@ -47,14 +47,29 @@ Connect the terminal to your GitHub account [using SSH keys](https://help.github
 - [ ] [Add the SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 - [ ] Check that it's working by running eg `git pull origin master` in one of the repos
 
-## Git config
+## Git Config
 Update the content in the git config file to ensure that GitHub commits are being assigned to the right user.
 
 - [ ] Update the name - `git config --global user.name "<Full Name>"`
 - [ ] Update the email address - `git config --global user.email "<email_address>"`
 
-# Heroku config
+# Heroku Config
 Set Heroku CLI credentials to enable connecting to the Heroku account through the terminal.
 
 - [ ] `heroku login` > Press any key to open the browser > Return to the terminal > Should see message `Logged in as <email_address>`
 - [ ] Run `cat ~/.netrc` to confirm that the login credentials have been added to that file
+
+## Setup of Further Tools & Software
+- [ ] [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac) & [Docker Compose](https://docs.docker.com/compose/install/)
+
+```
+# Build docker containers
+$ docker-compose build
+# Start docker containers
+$ docker-compose up -d
+```
+- [ ] Postgres: `brew install postgresql` and `brew services start postgresql
+- [ ] Node & npm: `brew install node`
+- [ ] React Native: `brew install node && brew install watchman && npm install -g react-native-cli`
+- [ ] Xcode: download through the App Store
+- [ ] Android Studio: `brew cask install android-studio`
