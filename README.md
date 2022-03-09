@@ -58,3 +58,18 @@ Set Heroku CLI credentials to enable connecting to the Heroku account through th
 
 - [ ] `heroku login` > Press any key to open the browser > Return to the terminal > Should see message `Logged in as <email_address>`
 - [ ] Run `cat ~/.netrc` to confirm that the login credentials have been added to that file
+
+## Setup of Further Tools / Software
+- [ ] [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac) & [Docker Compose](https://docs.docker.com/compose/install/)
+
+```
+# Build docker containers
+$ docker-compose build
+# Start docker containers
+$ docker-compose up -d
+```
+- [ ] Postgres: `brew install postgresql` and `brew services start postgresql
+- [ ] Node & npm: `brew install node`
+- [ ] React Native: `brew install node && brew install watchman && npm install -g react-native-cli`
+- [ ] Xcode: download through the App Store
+- [ ] Android Studio: `brew cask install android-studio`
