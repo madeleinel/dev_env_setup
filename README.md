@@ -6,7 +6,7 @@
 - [ ] Hush login message - `touch ~/.hushlogin`
 - [ ] [Install Homebrew](https://brew.sh/)
 - [ ] Install ZSH - `brew install zsh`
-- [ ] Change shell - `chsh -s /usr/local/bin/zsh` OR `chsh -s /bin/zsh` - run 'atom /etc/shells' to check which path is included in the list of acceptable shells. If neither are included, add it to the bottom of that list.
+- [ ] Change shell - `chsh -s /usr/local/bin/zsh` OR `chsh -s /bin/zsh` - run `atom /etc/shells` to check which path is included in the list of acceptable shells. If neither are included, add it to the bottom of that list.
 - [ ] Install Oh-my-zsh - `curl -L http://install.ohmyz.sh | sh`
 
 #### Add CLIs and short commands
@@ -56,5 +56,5 @@ Update the content in the git config file to ensure that GitHub commits are bein
 # Heroku config
 Set Heroku CLI credentials to enable connecting to the Heroku account through the terminal.
 
-- [ ] `heroku login` > Press any key to open the browser > Return to the terminal > Should see message `Logged in as <email_address`
+- [ ] `heroku login` > Press any key to open the browser > Return to the terminal > Should see message `Logged in as <email_address>`
 - [ ] Run `cat ~/.netrc` to confirm that the login credentials have been added to that file
